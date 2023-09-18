@@ -1,8 +1,10 @@
+// https://leetcode.com/problems/combination-sum-ii/submissions/1020966778/
+
 class Solution
 {
 public:
     vector<int> stack;
-    vector<vector<int> > combinationSum;
+    vector<vector<int>> combinationSum;
 
     void strip(vector<int> &candidates, int target)
     {
@@ -62,7 +64,7 @@ public:
             solutionr(candidates, target, num);
     }
 
-    vector<vector<int> > combinationSum2(vector<int> &candidates, int target)
+    vector<vector<int>> combinationSum2(vector<int> &candidates, int target)
     {
         if (candidates.size() == 0)
         {
